@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 212 100% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 212 100% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 212 100% 12%;
+
+    --primary: 195 100% 39%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 195 85% 55%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 212 100% 12%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 195 100% 92%;
+    --accent-foreground: 195 100% 22%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 48 96% 89%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 195 100% 39%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 212 100% 4%;
+    --foreground: 195 100% 95%;
+
+    --card: 212 84% 8%;
+    --card-foreground: 195 100% 95%;
+
+    --popover: 212 84% 8%;
+    --popover-foreground: 195 100% 95%;
+
+    --primary: 195 100% 55%;
+    --primary-foreground: 212 100% 4%;
+    --primary-glow: 195 85% 70%;
+
+    --secondary: 212 32% 17%;
+    --secondary-foreground: 195 100% 95%;
+
+    --muted: 212 32% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 195 100% 15%;
+    --accent-foreground: 195 100% 85%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 195 100% 95%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 48 96% 89%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    --border: 212 32% 17%;
+    --input: 212 32% 17%;
+    --ring: 195 100% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
